@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body %}
+<h3>{{aluno.nome}}</h3>
+<p>Idade {{aluno.idade}} anos</p>
+<p>Genero {{aluno.genero}}</p>
+<p>enderco: {{aluno.endereco}}</p>
+<p>nome_mae: {{aluno.nome_mae}}</p>
+<p>telefone: {{aluno.telefone}}</p>
+<a href="/atualizar/aluno/{{aluno.pk}}"><button>atualizar cadastro</button></a>
+<a href="/deletar/aluno/{{aluno.pk}}">deletar aluno</a>
+<h2>{{msg}}</h2>
+{% endblock body %}
